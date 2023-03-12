@@ -45,3 +45,31 @@ housing_rent = load_housing_data()
 print(housing_rent.head())
 
 # print(pd.read_csv("./House_Rent_Dataset.csv"))
+
+# housing_rent.info()
+# print(housing_rent["Bathroom"].value_counts())
+print(housing_rent.describe())
+
+
+# matplotlib inline
+# import matplotlib.pyplot as plt
+# housing_rent.hist(bins=50, figsize=(20,15))
+# save_fig("attribute_histogram_plots")
+# plt.show()
+
+
+# Testing Set
+
+np.random.seed(42)
+def split_train_test(data, test_ratio):
+    shuffled_indices = np.random.permutation(len(data))
+    test_set_size = int(len(data)* test_ratio)
+    test_indices = shuffled_indices[:test_set_size]
+    train_indices = shuffled_indices[test_set_size:]
+    return data.iloc[train_indices], data.iloc[test_indices]
+
+train_set, test_set = split_train_test(housing_rent, 0.2)
+print(len(train_set))
+print(len(test_set))
+
+
