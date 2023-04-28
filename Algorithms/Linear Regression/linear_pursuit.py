@@ -2,11 +2,18 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-# Creating Sample dataset
+# Sample dataset
 X = np.array([1, 2, 3, 4, 5]).reshape((-1, 1))
 Y = np.array([2, 3, 5, 4, 5])
+Z = np.array([1, 2, 3, 4, 5])
 
-# Importing Linear Regression model
+print(X)
+print("\n -----------------x----------------- \n")
+print(Z)
+print("\n -----------------x----------------- \n")
+print(Y)
+
+# Linear Regression model
 model = LinearRegression()
 model.fit(X, Y)
 
