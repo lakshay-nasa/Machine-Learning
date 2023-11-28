@@ -3,8 +3,7 @@
 This project is an Access Control System developed using Python and integrated with Firebase for real-time user authentication and management. It utilizes facial recognition technology to grant access to registered users based on their facial features.
 
 <div style="text-align:center">
-    <img src="./userAccessSnap.png
-    " alt="Access Control System" width="45%" height="45%">
+    <img src="./userAccessSnap.png" alt="Access Control System" width="44%" height="44%">
     <img src="./ACS.gif" alt="ACS" width="45%" height="45%">
 </div>
 
